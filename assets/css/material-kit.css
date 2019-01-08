@@ -77,7 +77,9 @@ body {
 
 hr {
   box-sizing: content-box;
-  height: 0;
+  height: 2px;
+  color: rgb(83,83,83);
+  background-color: rgb(83,83,83);
   overflow: visible;
 }
 
@@ -14656,6 +14658,10 @@ textarea {
 
 .icon.icon-success {
   color: #4caf50;
+}
+
+.icon.icon-spotify {
+  color: #1DB954;
 }
 
 .icon.icon-warning {

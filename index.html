@@ -10,46 +10,60 @@
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <!-- Material Kit CSS -->
   <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
 </head>
 
 <body>
-  <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100">
-    <div class="container">
-      <div class="collapse navbar-collapse">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-              <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Team Members</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="https://github.com/jwhlaforest" target="_blank">J&#233;r&#244;me Laforest</a>
-                <a class="dropdown-item" href="https://github.com/LeaLamatina" target="_blank">Lea Lamatina</a>
-                <a class="dropdown-item" href="https://github.com/bmonroe44" target="_blank">Brian Monroe</a>
-                <a class="dropdown-item" href="https://github.com/nikkistatum" target="_blank">Nikki Statum</a>
-              </div>
-            </ul>
-          </div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container">
+      <a class="navbar-brand"style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)">Final Project - Team AMD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="sr-only">Team Members</span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/LeaLamatina/Spotify_Presentation">Check out our Github</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          when music makes you meta
+        </span>
       </div>
     </div>
-  </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/woodstock.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 ml-auto mr-auto">
-          <div class="brand text-center">
-              <h1 style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)"><strong>Spotify Audio Analysis</strong></h1>
-            <h3 class="title text-center" style="color:rgb(179,179,179); text-shadow: 1px 1px 2px black, 0 0 15px rgba(29, 185, 84, 0.5)">machine learning and song popularity</h3>
-            <div class="blockquote undefined">
-              <p>“No matter how corrupt, greedy, and heartless our government, our corporations, our media, and our religious & charitable institutions may become, the music will still be wonderful.”</p><small style="color:rgb(29,185,84)">― Kurt Vonnegut</small>
-            </div>
+
+        <!-- <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://github.com/LeaLamatina">Lea Lamatina</a>
+          <a class="dropdown-item" href="https://github.com/nikkistatum">Nikki Statum</a>
+          <a class="dropdown-item" href="https://github.com/bmonroe44">Brian Monroe</a>
+          <a class="dropdown-item" href="https://github.com/jwhlaforest">J&#233;r&#244;me Laforest</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://github.com/LeaLamatina/Spotify_Presentation"><b>Project GitHub</b></a></li>
+        </div> -->
+
+</nav>
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/woodstock.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto">
+        <div class="brand text-center">
+            <h1 style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)"><strong>Spotify Audio Analysis</strong></h1>
+          <h3 class="title text-center" style="color:rgb(179,179,179); text-shadow: 1px 1px 2px black, 0 0 15px rgba(29, 185, 84, 0.5)">machine learning and song popularity</h3>
+          <div class="blockquote undefined">
+            <p>“No matter how corrupt, greedy, and heartless our government, our corporations, our media, and our religious & charitable institutions may become, the music will still be wonderful.”</p><small style="color:rgb(29,185,84)">― Kurt Vonnegut</small>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
   <div class="main main-raised">
     <div class="container">
@@ -60,42 +74,85 @@
         <br>
         <h6>Data Source:</h6>
         <p>All data came from Spotify's API calls, using the SpotiPy library to increase the ease and speed of the calls.  API endpoints used included Track Results, Audio Features, Track Information, and Artist Information.  Documentation for both are below:</p>
-        <a href="https://spotipy.readthedocs.io/en/latest/" target="blank">Spotify API Documentation</a>
+        <a href="https://spotipy.readthedocs.io/en/latest/" target="blank">SpotiPy Library Documentation</a>
         <br>
-        <a href="https://developer.spotify.com/documentation/web-api/reference-beta/" target="blank">SpotiPy Library Documentation</a>
+        <a href="https://developer.spotify.com/documentation/web-api/reference-beta/" target="blank">Spotify API Documentation</a>
         <br><br>
         <h6>Data Challanges & Limitations:</h6>
         <p>The data is based soley on the current top 10,000 streamed songs on Spotify.  This means that our data is at the mercy of Spotify's key demographics and the time of the year.  Data was run December 2018, meaning there are a lot of Christmas songs charting that would not any other season.</p>
         <p>After running the API calls, it was also discovered there are quite a few duplicate songs on the list.  Therefore, the original list of 10,000 gets cut down when the data is de-duped.</p>
       </div>
+      <hr>
       <div class="section text-center">
         <h2 class="title">Q: After all of the Data Munging is done, and data is trained and tested, what are the results?</h2>
-        <h2>A: 33% Accuracy, or very little correlation.</h2>
+        <h2 style="color:rgb(29,185,84); border: black"><strong>A: 33% Accuracy, or very little correlation.</strong></h2>
         <br>
       </div>
+      <hr>
     </div>
 
-  <div class="container-fluid">
+  <div class="container" style="padding: 5px">
     <div class="row">
       <div class="col">
-        <h2 style="text-align: center">Audio Features in Tableau</h2>
+        <h2 style="text-align: center">Audio Features Visualizations</h2>
         <div class='tableauPlaceholder' id='viz1546921680502' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpotifySongAnalysis&#47;SpotifySongAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpotifySongAnalysis&#47;SpotifySongAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpotifySongAnalysis&#47;SpotifySongAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1546921680502');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <br>
+        <div class="row">
+          <div class="col">
+            <img class="img" src="assets/img/Spotify_Logo_RGB_Green.png" style="max-width: 100%">
+          </div>
+          <div class="col-md-8">
+              <h4>The data shows that the audio quality of a track has little bearing on overall popularity.  There is a much stronger correlation between an artists popularity and how well a song will do.</h4>
+          </div>
+        </div>
       </div>
       <div class="col-md-3">
         <div class="row">
-          <img src="assets/img/spot1.jpg" width="500">
+          <div class="info info-horizontal">
+            <h3 style="color:rgb(29,185,84); border: black">Spotify Definitions:</h3>
+            <div class="icon icon-spotify">
+              <i class="material-icons">free_breakfast</i>
+            </div>
+            <div class="description">
+              <h6 class="info-title">acousticness - float</h6>
+              <p>A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</p>
+            </div>
+            <div class="icon icon-spotify">
+              <i class="material-icons">headset</i>
+            </div>
+            <div class="description">
+              <h6 class="info-title">danceability - float</h6>
+              <p>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</p>
+            </div>
+            <div class="icon icon-spotify">
+              <i class="material-icons">plus_one</i>
+            </div>
+            <div class="description">
+              <h6 class="info-title">energy - float</h6>
+              <p>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</p>
+            </div>
+            <div class="icon icon-spotify">
+              <i class="material-icons">volume_up</i>
+            </div>
+            <div class="description">
+              <h6 class="info-title">loudness - float</h6>
+              <p>The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.</p>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <img src="assets/img/spot1.jpg">
-        </div>
-      </div>
-      <div class="col-md-auto">
-        <h1>TEXT TEXT TEXT</h1>
       </div>
     </div>
   </div>
 
 </div>
+
+<footer class="footer footer-default">
+  <div class="container">
+    <div class="row">
+      
+    </div>
+  </div>
+</footer>
 
 <footer class="footer footer-default">
   <div class="container">
