@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>
-    Spotify Audio Analysis
+    Spotify Audio Analysis - Home
   </title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
   <!--     Fonts and icons     -->
@@ -23,7 +23,7 @@
 <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" color-on-scroll="100" id="sectionsNav">
   <div class="container">
     <div class="navbar-translate">
-      <a class="navbar-brand" style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)">
+      <a class="navbar-brand" style="color:rgb(29,185,84); text-shadow: .5px .5px .5px black;">
         Team AMD </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
@@ -36,7 +36,7 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
         <li class="dropdown nav-item">
-          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" style="color:rgb(29,185,84); text-shadow: .5px .5px .5px black;">
             <i class="material-icons" >group</i> Team Members
           </a>
           <div class="dropdown-menu dropdown-with-icons">
@@ -56,12 +56,12 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" download="spotify.csv" href="./Resources/Spotify_Full_Information.csv" style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)">
-            <i class="material-icons">get_app</i> Download
+          <a class="nav-link" href="data.html" style="color:rgb(29,185,84); text-shadow: .5px .5px .5px black;">
+            <i class="material-icons">assesment</i> Data Munging / Machine Learning
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/LeaLamatina/Spotify_Presentation" style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)">
+          <a class="nav-link" href="https://github.com/LeaLamatina/Spotify_Presentation" style="color:rgb(29,185,84); text-shadow: .5px .5px .5px black;">
             <i class="material-icons">star</i> Star/Fork our GitHub
           </a>
         </li>
@@ -79,7 +79,7 @@
             <h1 style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)"><strong>Spotify Audio Analysis</strong></h1>
           <h3 class="title text-center" style="color:rgb(179,179,179); text-shadow: 1px 1px 2px black, 0 0 15px rgba(29, 185, 84, 0.5)">machine learning and song popularity</h3>
           <div class="blockquote undefined">
-            <p>“No matter how corrupt, greedy, and heartless our government, our corporations, our media, and our religious & charitable institutions may become, the music will still be wonderful.”</p><small style="color:rgb(29,185,84)">― Kurt Vonnegut</small>
+            <p>“No matter how corrupt, greedy, and heartless our government, our corporations, our media, and our religious & charitable institutions may become, the music will still be wonderful.”</p><small style="color:black">― Kurt Vonnegut</small>
           </div>
         </div>
       </div>
@@ -164,17 +164,15 @@
         </div>
       </div>
     </div>
-  </div>
-
-</div>
-
-<footer class="footer footer-default">
-  <div class="container">
     <div class="row">
-      
+      <div class="col">
+        <h3 style="text-align: center"><strong> To see how we got here, check out our Data Munging / Machine Learning link in the nav bar.</strong>
+        </h3>
+        <br>
+      </div>
     </div>
   </div>
-</footer>
+</div>
 
 <footer class="footer footer-default">
   <div class="container">
@@ -192,21 +190,24 @@
       <script>
         document.write(new Date().getFullYear())
       </script>, template from 
-      <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a>
+      <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a>. Danke!
     </div>
   </div>
 </footer>
 
-<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-<script src="./assets/js/plugins/moment.min.js"></script>
-<!-- sliders -->
-<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-<!-- control center for material kit -->
-<script src="./assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
-
-
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="../assets/js/plugins/moment.min.js"></script>
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
 
 </body>
 

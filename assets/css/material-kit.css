@@ -14861,6 +14861,8 @@ h2.title {
   padding: 10px 20px;
   margin: 0 0 20px;
   border-left: 5px solid #eee;
+  background-color: #b3b3b3b0;
+  border-radius: 10px;
 }
 
 .blockquote p {

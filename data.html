@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    Analysis - Data
+  </title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-kit.css?v=2.0.5" rel="stylesheet">
+</head>
+
+<body class="landing-page sidebar-collapse">
+
+<nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" color-on-scroll="100" id="sectionsNav">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" style="color:rgb(29,185,84); text-shadow: .5px .5px .5px black;" href="index.html">
+        Team AMD </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="dropdown nav-item">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" style="color:rgb(29,185,84); text-shadow: .5px .5px .5px black;">
+            <i class="material-icons" >group</i> Team Members
+          </a>
+          <div class="dropdown-menu dropdown-with-icons">
+            <a href="https://github.com/LeaLamatina" class="dropdown-item">
+              <i class="material-icons">mood</i> Lea Lamatina
+            </a>
+            <a href="https://github.com/nikkistatum" class="dropdown-item">
+              <i class="material-icons">whatshot</i> Nikki Statum
+            </a>
+            <a href="https://github.com/bmonroe44" class="dropdown-item">
+              <i class="material-icons">highlight</i> Brian Monroe
+            </a>
+            <a href="https://github.com/jwhlaforest" class="dropdown-item">
+              <i class="material-icons">public</i> J&#233;r&#244;me Laforest
+            </a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="data.html" style="color:rgb(29,185,84); text-shadow: .5px .5px .5px black;">
+            <i class="material-icons">assesment</i> Data Munging / Machine Learning
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/LeaLamatina/Spotify_Presentation" style="color:rgb(29,185,84); text-shadow: .5px .5px .5px black;">
+            <i class="material-icons">star</i> Star/Fork our GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/woodstock.jpg'); max-height: 550px">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="title" style="color:rgb(29,185,84); text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)">API Calls. Data Munging, and Machine Learning</h1>
+        <h3 style="color:rgb(236, 236, 236); text-shadow: 1px 1px 2px black, 0 0 15px rgba(29, 185, 84, 0.5)">People listen to music because it's technically sound, diversive, and innovative right?  Wrong.  Let us show you the numbers.</h3>
+        <br>
+        <a href="https://youtu.be/TPt8vegXAx0" target="_blank" class="btn btn-danger btn-raised btn-md">
+          <i class="fa fa-play"></i>  Jimi Hendrix - Purple Haze Live @ Woodstock
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main main-raised">
+  <div class="container">
+    <div class="section text-center">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <h2 class="title">Lets Talk Numbers...</h2>
+          <h5 class="description">With so much information to go through, what interesting stats are in the data?</h5>
+        </div>s
+      </div>
+      <div class="features">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons" style="color:#212121">thumb_up_alt</i>
+              </div>
+              <h4 class="info-title">Only "Old" Artist in the Top 10</h4>
+              <h4>QUEEN!</h4><p> But thats more than likely do to the success the the movie Bohemian Rhapsody.  Still, way to represent Queen.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons" style="color: #1db954">sentiment_dissatisfied</i>
+              </div>
+              <h4 class="info-title">Minor is Major?</h4>
+              <p>61% of songs on the list were in a minor Key.  Songs in a minor key gained traction during the Great Depression.  Looks like they never lost that edge.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons" style="color:#212121">equalizer</i>
+              </div>
+              <h4 class="info-title">Wait! An Anomaly!</h4>
+              <p>Out of the Top 10 most popular artists, the only musician to have a song more popular than them is Ariana Grande.  thank u, next scores a perfect 100 on the popularity score and Ariana scores a lowly 97 in popularity.  Joke.  That's still an impressive number.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <div class="section text-center">
+    <h1 class="title">API Calls</h1>
+    <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/img/api_calls.jpg" alt="Roopsy" class="responsive" style="max-width: 100%">
+          <figcaption>Example of merging DataFrames and making data readable</figcaption>
+        </div>
+        <div class="col-md-6">
+          <h3>SpotiPy Library does most of the heavy lifing.  But here is how we got all the data needed:</h3>
+          <ol>
+            <li style="text-align: left">Calls went out to get the 10,000 most popular songs, and everything is thrown into a Pandas DataFrame.</li>
+            <li style="text-align: left">Duplicated titles were dropped for data integrity.</li>
+            <li style="text-align: left">Track ID's were used to send out another call to get the Audio Features.  These were merged into the first DataFrame.</li>
+            <li style="text-align: left">Before proceeding, go down a rabbit hole and look at the data because Spotify returns so much amazing stuff.  Regroup, get back on task.</li>
+            <li style="text-align: left">Use Track ID one more time to send out a call and return the Artist ID.  This is nowhere in the previous data which is very frustrating.</li>
+            <li style="text-align: left">After getting the Artist ID, send out one final call to return Genre, Artist Popularity, and Artist Image.</li>
+          </ol>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>In all, it takes four API calls to collect everything</h2>
+        </div>
+        <div class="col">
+          <img src="assets/img/numbers.jpg" alt="Ruh Roh" class="responsive" style="max-width: 100%; padding-bottom: 35px">
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="section text-center">
+          <h1 class="title">Feed the Machine (Learning)</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tab-pane active text-center gallery" id="studio">
+          <div class="row">
+            <div class="col-md-6 ml-auto">
+              <img src="assets/img/knn.jpg" class="rounded" style="max-width: 100%">
+              <img src="assets/img/log_reg.jpg" class="rounded" style="max-width: 100%">
+            </div>
+            <div class="col-md-6 mr-auto">
+              <img src="assets/img/rando.jpg" class="rounded" style="max-width: 100%">
+              <h2 style="background-color: #21212133; border-radius: 10px; color:rgb(29,185,84);    -webkit-text-stroke: 1px black; padding: 25px"><strong>K Nearest Neighbor, Logistic Regression, Random Forest and Support Vector Machine</strong></h2>
+              <img src="assets/img/Spotify_Icon_RGB_Green.png" class="rounded" style="max-width: 55%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer footer-default">
+  <div class="container">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a>
+            Washington University Data Analytics Bootcamp
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right">
+      &copy;
+      <script>
+        document.write(new Date().getFullYear())
+      </script>, template from 
+      <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a>. Danke!
+    </div>
+  </div>
+</footer>
+
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="../assets/js/plugins/moment.min.js"></script>
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
+
+</body>
+
+</html>
